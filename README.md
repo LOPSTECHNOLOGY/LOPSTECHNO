@@ -1,14 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LOPSTECHNOLOGY</title>
+<title>Helvetia Token</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -18,38 +18,43 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#050816;
-color:white;
+background:#050505;
+color:#fff;
 }
+
+/* Navbar */
 
 header{
 position:fixed;
+top:0;
 width:100%;
-padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,.5);
-backdrop-filter:blur(10px);
-z-index:1000;
+padding:20px 10%;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(15px);
+z-index:999;
 }
 
 .logo{
 font-size:28px;
-font-weight:700;
-color:#00ff88;
+font-weight:bold;
+color:#00ff99;
 }
 
 nav a{
-color:white;
 text-decoration:none;
-margin-left:25px;
+color:white;
+margin-left:30px;
 transition:.3s;
 }
 
 nav a:hover{
-color:#00ff88;
+color:#00ff99;
 }
+
+/* Hero */
 
 .hero{
 height:100vh;
@@ -57,103 +62,154 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
-background:linear-gradient(135deg,#050816,#0b1c39);
+padding:0 20px;
+background:linear-gradient(135deg,#000,#021b13);
 }
 
 .hero h1{
-font-size:65px;
-margin-bottom:20px;
-}
-
-.hero h1 span{
-color:#00ff88;
+font-size:70px;
+color:#00ff99;
+text-shadow:0 0 20px #00ff99;
 }
 
 .hero p{
-font-size:18px;
+margin:20px auto;
 max-width:700px;
-margin:auto;
-line-height:1.8;
+font-size:20px;
+color:#ddd;
 }
 
 .btn{
 display:inline-block;
-margin-top:35px;
-padding:15px 40px;
-background:#00ff88;
+padding:15px 35px;
+background:#00ff99;
 color:#000;
 font-weight:bold;
-border-radius:30px;
 text-decoration:none;
+border-radius:50px;
+margin:10px;
 transition:.3s;
 }
 
 .btn:hover{
-transform:scale(1.05);
-box-shadow:0 0 20px #00ff88;
+transform:translateY(-5px);
+box-shadow:0 0 25px #00ff99;
 }
 
+/* Section */
+
 section{
-padding:100px 8%;
+padding:100px 10%;
 }
 
 .title{
-text-align:center;
 font-size:40px;
+text-align:center;
 margin-bottom:60px;
-color:#00ff88;
+color:#00ff99;
 }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:#101d3d;
-padding:30px;
-border-radius:15px;
-transition:.4s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 20px rgba(0,255,136,.4);
-}
-
-.card h3{
-margin-bottom:15px;
-color:#00ff88;
-}
+/* About */
 
 .about{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
 align-items:center;
 }
 
 .about img{
 width:100%;
-border-radius:15px;
 }
 
-footer{
-text-align:center;
-padding:30px;
-background:#081020;
+.about-text p{
+line-height:1.8;
+color:#bbb;
 }
+
+/* Card */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:20px;
+text-align:center;
+border:1px solid #00ff99;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #00ff99;
+}
+
+.card h3{
+color:#00ff99;
+margin-bottom:15px;
+}
+
+/* Tokenomics */
+
+.tokenomics{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+text-align:center;
+}
+
+.token-box{
+background:#111;
+padding:30px;
+border-radius:20px;
+}
+
+.token-box h2{
+color:#00ff99;
+margin-bottom:10px;
+}
+
+/* Roadmap */
+
+.timeline{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.step{
+background:#111;
+padding:25px;
+border-left:5px solid #00ff99;
+border-radius:10px;
+}
+
+.step h3{
+color:#00ff99;
+margin-bottom:10px;
+}
+
+/* Footer */
+
+footer{
+padding:30px;
+text-align:center;
+background:#000;
+color:#777;
+margin-top:80px;
+}
+
+/* Responsive */
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:42px;
-}
-
-.about{
-grid-template-columns:1fr;
+font-size:45px;
 }
 
 nav{
@@ -161,6 +217,7 @@ display:none;
 }
 
 }
+
 </style>
 
 </head>
@@ -168,13 +225,13 @@ display:none;
 
 <header>
 
-<div class="logo">LOPSTECHNOLOGY</div>
+<div class="logo">HELVETIA</div>
 
 <nav>
-<a href="#">Home</a>
 <a href="#about">About</a>
-<a href="#service">Services</a>
-<a href="#contact">Contact</a>
+<a href="#features">Features</a>
+<a href="#tokenomics">Tokenomics</a>
+<a href="#roadmap">Roadmap</a>
 </nav>
 
 </header>
@@ -183,15 +240,18 @@ display:none;
 
 <div>
 
-<h1>Welcome To <span>LOPSTECHNOLOGY</span></h1>
+<h1>HELVETIA TOKEN</h1>
 
 <p>
-Building Future Technology, Software Development,
-Cyber Security, Cloud Computing, Artificial Intelligence,
-dan Digital Transformation untuk bisnis modern.
+The Future of Decentralized Finance.
+Helvetia Token hadir sebagai cryptocurrency modern
+yang cepat, aman, transparan, dan siap mendukung
+ekosistem Web3.
 </p>
 
-<a href="#service" class="btn">Explore Services</a>
+<a href="#" class="btn">Buy Token</a>
+
+<a href="#" class="btn">Whitepaper</a>
 
 </div>
 
@@ -199,81 +259,124 @@ dan Digital Transformation untuk bisnis modern.
 
 <section id="about">
 
-<h2 class="title">About Us</h2>
+<h2 class="title">About Helvetia</h2>
 
 <div class="about">
 
-<div>
-
-<h2>Innovate The Future</h2>
-
-<br>
+<div class="about-text">
 
 <p>
-LOPSTECHNOLOGY merupakan perusahaan teknologi yang berfokus pada
-pengembangan website, aplikasi mobile, cloud server, keamanan siber,
-serta solusi digital berbasis AI untuk mendukung transformasi bisnis.
+
+Helvetia Token merupakan aset digital generasi baru
+yang dirancang untuk menghadirkan transaksi blockchain
+yang cepat, aman, dan efisien.
+
+Dengan teknologi modern dan komunitas yang kuat,
+Helvetia siap menjadi bagian dari masa depan
+keuangan digital.
+
 </p>
 
 </div>
 
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900" alt="Technology">
-
 </div>
 
 </section>
 
-<section id="service">
+<section id="features">
 
-<h2 class="title">Our Services</h2>
+<h2 class="title">Features</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>🌐 Website Development</h3>
-<p>Membangun website modern, cepat, aman dan responsive.</p>
+<h3>⚡ Fast Transaction</h3>
+<p>Konfirmasi transaksi dalam hitungan detik.</p>
 </div>
 
 <div class="card">
-<h3>📱 Mobile App</h3>
-<p>Aplikasi Android & iOS dengan teknologi terbaru.</p>
+<h3>🔒 Secure</h3>
+<p>Didukung teknologi blockchain yang aman.</p>
 </div>
 
 <div class="card">
-<h3>☁ Cloud Computing</h3>
-<p>Deployment VPS, Cloud Server dan Infrastruktur Digital.</p>
+<h3>🌎 Community</h3>
+<p>Dibangun bersama komunitas global.</p>
 </div>
 
 <div class="card">
-<h3>🛡 Cyber Security</h3>
-<p>Proteksi data, penetration testing dan keamanan jaringan.</p>
-</div>
-
-<div class="card">
-<h3>🤖 Artificial Intelligence</h3>
-<p>Integrasi AI dan Machine Learning untuk bisnis modern.</p>
-</div>
-
-<div class="card">
-<h3>💻 IT Consulting</h3>
-<p>Konsultasi teknologi untuk meningkatkan produktivitas perusahaan.</p>
+<h3>📈 Scalable</h3>
+<p>Siap berkembang untuk jutaan pengguna.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="contact">
+<section id="tokenomics">
 
-<h2 class="title">Contact Us</h2>
+<h2 class="title">Tokenomics</h2>
 
-<div style="text-align:center;line-height:2">
+<div class="tokenomics">
 
-<p>📧 Email : admin@lopstechnology.com</p>
-<p>📱 WhatsApp : +62 xxx xxxx xxxx</p>
-<p>🌍 www.lopstechnology.com</p>
+<div class="token-box">
+<h2>40%</h2>
+Liquidity
+</div>
 
-<a href="#" class="btn">Hubungi Kami</a>
+<div class="token-box">
+<h2>25%</h2>
+Community
+</div>
+
+<div class="token-box">
+<h2>15%</h2>
+Development
+</div>
+
+<div class="token-box">
+<h2>10%</h2>
+Marketing
+</div>
+
+<div class="token-box">
+<h2>10%</h2>
+Reserve
+</div>
+
+</div>
+
+</section>
+
+<section id="roadmap">
+
+<h2 class="title">Roadmap</h2>
+
+<div class="timeline">
+
+<div class="step">
+<h3>Q1</h3>
+<p>Website Launch</p>
+<p>Community Opening</p>
+</div>
+
+<div class="step">
+<h3>Q2</h3>
+<p>Token Launch</p>
+<p>DEX Listing</p>
+</div>
+
+<div class="step">
+<h3>Q3</h3>
+<p>Staking</p>
+<p>NFT Marketplace</p>
+</div>
+
+<div class="step">
+<h3>Q4</h3>
+<p>CEX Listing</p>
+<p>Global Partnership</p>
+</div>
 
 </div>
 
@@ -281,36 +384,9 @@ serta solusi digital berbasis AI untuk mendukung transformasi bisnis.
 
 <footer>
 
-© 2026 LOPSTECHNOLOGY | All Rights Reserved
+© 2026 Helvetia Token — All Rights Reserved.
 
 </footer>
-
-<script>
-
-const cards=document.querySelectorAll(".card");
-
-window.addEventListener("scroll",()=>{
-
-cards.forEach(card=>{
-
-let top=card.getBoundingClientRect().top;
-
-if(top<window.innerHeight-100){
-card.style.opacity="1";
-card.style.transform="translateY(0)";
-}
-
-});
-
-});
-
-cards.forEach(card=>{
-card.style.opacity="0";
-card.style.transform="translateY(50px)";
-card.style.transition=".8s";
-});
-
-</script>
 
 </body>
 </html>
